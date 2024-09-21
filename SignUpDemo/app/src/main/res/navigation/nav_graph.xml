@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.signupdemo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_termsPage"
+            app:destination="@id/termsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.signupdemo.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_emainFragment"
+            app:destination="@id/emainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emainFragment"
+        android:name="com.example.signupdemo.emainFragment"
+        android:label="fragment_emain"
+        tools:layout="@layout/fragment_emain" >
+        <action
+            android:id="@+id/action_emainFragment_to_lastPage"
+            app:destination="@id/lastPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastPage"
+        android:name="com.example.signupdemo.lastPage"
+        android:label="fragment_last_page"
+        tools:layout="@layout/fragment_last_page" >
+        <action
+            android:id="@+id/action_lastPage_to_termsPage"
+            app:destination="@id/termsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsPage"
+        android:name="com.example.signupdemo.TermsPage"
+        android:label="fragment_terms_page"
+        tools:layout="@layout/fragment_terms_page" />
+</navigation>
