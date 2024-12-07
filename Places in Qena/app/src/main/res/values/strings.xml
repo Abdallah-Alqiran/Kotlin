@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Places in Qena</string>
+    <string name="username">username:</string>
+    <string name="enter_your_name">Enter your name...</string>
+    <string name="password">password:</string>
+    <string name="enter_your_password">Enter your password...</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="login">Login</string>
+    <string name="gender_type_photo">Gender Type photo</string>
+    <string name="show_more">show more</string>
+    <string name="about">About</string>
+
+    <string-array name="menu_array">
+        <item>About</item>
+    </string-array>
+
+</resources>
